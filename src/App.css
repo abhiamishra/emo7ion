@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700");
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,142 @@
     transform: rotate(360deg);
   }
 }
+
+/* welcome page */
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.welcome-page {
+  align-items: flex-end;
+  background-color: #707EFF;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  padding: 72px 100px;
+  width: 1440px;
+}
+
+.logo {
+  align-self: center;
+  height: 274px;
+  object-fit: cover;
+  width: 710px;
+}
+
+.overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 2px;
+  min-width: 1238px;
+}
+
+.overlap-group1 {
+  height: 411px;
+  position: relative;
+  width: 613px;
+}
+
+.rectangle-1 {
+  background-color: white;
+  cursor: pointer;
+  height: 336px;
+  left: 0;
+  position: absolute;
+  top: 75px;
+  width: 613px;
+}
+
+.title {
+  cursor: pointer;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 373px;
+}
+
+.polygon-1 {
+  height: 137px;
+  left: 252px;
+  object-fit: cover;
+  position: absolute;
+  top: 171px;
+  width: 106px;
+}
+
+.clipart2739949-1 {
+  height: 247px;
+  left: 152px;
+  object-fit: cover;
+  position: absolute;
+  top: 118px;
+  width: 318px;
+}
+
+.overlap-group {
+  height: 414px;
+  position: relative;
+  width: 623px;
+}
+
+.rectangle-2 {
+  background-color: black;
+  cursor: pointer;
+  height: 336px;
+  left: 0;
+  position: absolute;
+  top: 75px;
+  width: 613px;
+}
+
+.view-past-feedback {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0;
+  width: 551px;
+}
+
+.clipart14746-1 {
+  height: 194px;
+  left: 83px;
+  object-fit: cover;
+  position: absolute;
+  top: 149px;
+  width: 187px;
+}
+
+.clipart644289-1 {
+  height: 181px;
+  left: 331px;
+  object-fit: cover;
+  position: absolute;
+  top: 156px;
+  width: 177px;
+}
+.inter-normal-white-30px {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  cursor: pointer;
+  
+  color: #FFFFFF;
+}
+
