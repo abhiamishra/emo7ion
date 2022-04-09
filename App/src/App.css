@@ -294,6 +294,12 @@
 
 .overlap-group {
   height: 118px;
+  margin-left: 0px;
+  position: relative;
+  width: 520px;
+}
+.overlap-group-sec {
+  height: 118px;
   margin-left: 30px;
   position: relative;
   width: 520px;
@@ -431,4 +437,19 @@
   height: 302px;
   left: 534px;
   top: -41px;
+}
+.plainBox{
+  position: absolute;
+  width: 1070px;
+  height: 471px;
+  left: 0px;
+  top: 0px;
+  background: #C0C0C0;
+}
+.logo2{
+  position: absolute;
+  width: 540px;
+  height: 191px;
+  left: 270px;
+  top: 280px;
 }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import emotions2 from '../assets/emotions2.png'
 import emotions1 from '../assets/emotions1.png'
-import logo from '../assets/home.png'
+import logo from '../assets/logo2.png'
 import video from '../assets/vid.png'
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ function Landing() {
           <img className="smile2" src={emotions1} />
           <img className="rightSmile" src={emotions1} />
           <div className="frame-2">
+          <div className = "plainBox"></div>
           <img className="vid" src={video} />
             <div className="frame-1">
               <div className="flex-row">
@@ -26,7 +27,7 @@ function Landing() {
                     Camera,
                   </div>
                 </div>
-                <img className="video-image" src={logo} />
+                <img className="logo2" src={logo} />
               </div>
             </div>
             <div className="overlap-group-container2">
@@ -38,7 +39,7 @@ function Landing() {
                 Guest
                 </Link>
               </div>
-              <div className="overlap-group">
+              <div className="overlap-group-sec">
                 <a href="javascript:SubmitForm('form1')">
                   <div className="create-account-box"></div>
                 </a>
