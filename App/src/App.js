@@ -9,17 +9,8 @@ import Welcome from './pages/welcome';
 function App() {
   return (
     <div className="App">
-      {/* <Welcome
-      logo="./assets/logo.png"
-      startNewCall="Start new call"
-      play="./assets/play.png"
-      viewPastFeedback="View Past Feedback"
-      smile= './assets/smile.png'
-      sad="./assets/sad.png"
-    /> */}
-
       <Routes>
-        <Route path="/" element={<Welcome />} />
+        <Route exact path="/emo7ion" element={<Welcome />} />
         <Route path="/video" element={<Video />} />
       </Routes>
   </div>

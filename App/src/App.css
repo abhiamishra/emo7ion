@@ -167,6 +167,7 @@
   width: 177px;
 }
 .inter-normal-white-30px {
+  text-decoration: none;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;

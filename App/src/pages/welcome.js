@@ -18,10 +18,7 @@ function Welcome() {
           <div className="overlap-group-container">
             <div className="overlap-group1">
               <div className="rectangle-1" ></div>
-              <a href = '/video'>
-                {/* <div className="inter-normal-white-30px">
-                Start New Call
-                </div> */}
+              <a href = '/video' style={{ textDecoration: 'none' }}>
                 <Link className="inter-normal-white-30px" to="/video">Start New Call</Link>
               </a>
               <img className="clipart2739949-1" alt = "play button" src={play} />
