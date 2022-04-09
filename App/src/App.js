@@ -10,8 +10,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/emo7ion" element={<Welcome />} />
+        <Route exact path="/emo7ion" element={<Landing />} />
         <Route path="/video" element={<Video />} />
+        <Route path="/welcome" element={<Welcome />} />
       </Routes>
   </div>
   );

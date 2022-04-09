@@ -178,3 +178,257 @@
   color: #FFFFFF;
 }
 
+/* landing page */
+.container-center-horizontal2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal2 > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.landing-page {
+  align-items: flex-start;
+  background-color: var(--blueberry);
+  display: flex;
+  width: 1440px;
+}
+
+.emotions-2 {
+  height: 900px;
+  margin-left: 20px;
+  mix-blend-mode: soft-light;
+  width: 160px;
+}
+
+.overlap-group2 {
+  height: 900px;
+  margin-top: 0;
+  position: relative;
+  width: 1260px;
+}
+
+.frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 612px;
+  position: absolute;
+  top: 90px;
+  width: 1080px;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 452px;
+  position: relative;
+  width: 1080px;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 310px;
+  margin-top: -49px;
+  min-width: 859px;
+}
+
+.flex-col {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 261px;
+  width: 506px;
+}
+
+.lights {
+  letter-spacing: 0;
+  min-height: 121px;
+}
+
+.camera {
+  align-self: flex-end;
+  letter-spacing: 0;
+  margin-top: 19px;
+  min-height: 121px;
+  min-width: 396px;
+}
+
+.vid-1 {
+  height: 293px;
+  mix-blend-mode: soft-light;
+  object-fit: cover;
+  width: 353px;
+}
+
+.overlap-group-container2 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 42px;
+  min-width: 1080px;
+}
+
+.overlap-group1-2 {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 118px;
+  min-width: 520px;
+  padding: 0 68px;
+}
+
+.continue-as-guest {
+  letter-spacing: 0;
+  min-height: 48px;
+  min-width: 362px;
+}
+
+.overlap-group {
+  height: 118px;
+  margin-left: 30px;
+  position: relative;
+  width: 520px;
+}
+
+.create-account-box {
+  background-color: black;
+  cursor: pointer;
+  height: 118px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 520px;
+}
+.create-account-box2 {
+  background-color: white;
+  cursor: pointer;
+  height: 118px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 520px;
+}
+
+.sign-in {
+  left: 187px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 35px;
+}
+
+.emotions-1 {
+  height: 900px;
+  left: 899px;
+  mix-blend-mode: soft-light;
+  position: absolute;
+  top: 0;
+  width: 361px;
+}
+
+.video-image {
+  position: absolute;
+  width: 569px;
+  height: 228px;
+  left: 249px;
+  top: 261px;
+}
+
+.border-1px-black {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.inter-bold-black-40px {
+  color: black;
+  font-family: 'Inter';
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+}
+.inter-normal-white-30px2 {
+  color: white;
+  font-family: 'Inter';
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-bold-white-40px {
+  color: white;
+  font-family: 'Inter';
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+}
+.inter-bold-white-50px {
+  color: white;
+  font-family: "Inter";
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+}
+.inter-normal-black-100px {
+  color: black;
+  font-family: "Inter";
+  font-size: 100px;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-bold-black-100px {
+  color: black;
+  font-family: 'Inter';
+  font-size: 100px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rightSmile{
+  position: absolute;
+  width: 361px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  mix-blend-mode: soft-light;
+}
+.smile2{
+  position: absolute;
+  width: 361px;
+  right: 359px;
+  top: 0px;
+  bottom: 0px;
+
+  mix-blend-mode: soft-light;
+}
+.smile3{
+  position: absolute;
+  width: 361px;
+  right: 754px;
+  top: 0px;
+  bottom: 0px;
+
+  mix-blend-mode: soft-light;
+}
+.smile4{
+  position: absolute;
+  width: 361px;
+  right: 1132px;
+  top: 0px;
+  bottom: 0px;
+
+  mix-blend-mode: soft-light;
+}
+.vid{
+  position: absolute;
+  width: 276px;
+  height: 302px;
+  left: 534px;
+  top: -41px;
+}
