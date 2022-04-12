@@ -10,7 +10,7 @@ import '../App.css';
 document.body.style = "background: #707EFF;";
 
 function Welcome() {
-  
+
     return (
       <div className="container-center-horizontal" style = {{backgroundColor: '707EFF'}}>
         <form className="welcome-pagescreen" name="form2" action="form2" method="post">
@@ -18,9 +18,7 @@ function Welcome() {
           <div className="overlap-group-container">
             <div className="overlap-group1">
               <div className="rectangle-1" ></div>
-              <a href = '/video' style={{ textDecoration: 'none' }}>
-                <Link className="inter-normal-white-30px" to="/video">Start New Call</Link>
-              </a>
+                <a href={process.env.PUBLIC_URL + "/open_faces.html"} > Start New Call</a>
               <img className="clipart2739949-1" alt = "play button" src={play} />
             </div>
             <div className="overlap-group">

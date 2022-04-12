@@ -174,7 +174,7 @@
   font-size: 50px;
   line-height: 61px;
   cursor: pointer;
-  
+
   color: #FFFFFF;
 }
 
@@ -452,4 +452,17 @@
   height: 191px;
   left: 270px;
   top: 280px;
+}
+
+#canvas_output {
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+}
+
+#cam_input {
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+  margin-right: 30px;
 }
