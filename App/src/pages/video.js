@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, Component } from 'react';
 import TFToVideo from './TFToVideo';
 // import {Image, Model} from './model'
 let _stream;

@@ -124,7 +124,7 @@ export default function TFToVideo(props) {
         for (let i = 0; i < predictions.length; i++) {
           const start = predictions[i].topLeft;
           const end = predictions[i].bottomRight;
-          const size = [end[0] - start[0], end[1] - start[1]];
+          const size = [(end[0] - start[0]) +20, (end[1] - start[1]) +20];
           // console.log(canvasRef.current.width, canvasRef.current.height);
           console.log(start[0], start[1], size[0], size[1]);
           // Render a rectangle over each detected face.
