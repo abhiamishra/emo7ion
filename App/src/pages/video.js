@@ -1,10 +1,13 @@
-import React, { useEffect, useRef, Component } from 'react';
+import React, { useEffect, useState, useRef, Component } from 'react';
 import TFToVideo from './TFToVideo';
-// import {Image, Model} from './model'
+import {sendToModel} from './model'
 let _stream;
 var image = ''
+var currentEmotion = "SAD"
+const placeholderText = ["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"];
 
 function Video() {
+  const [index, setIndex] = useState(0);
     const camaraRef = useRef();
     useEffect(() => {
       navigator.mediaDevices
@@ -16,40 +19,46 @@ function Video() {
         .catch(function (err0r) {
           console.log('Something went wrong!', err0r);
         });
+        const timer = () => {
+          setIndex(prevIndex => {
+            if(prevIndex === placeholderText.length - 1){
+              return 0;
+            } 
+            return prevIndex + 1;
+          })
+        };
+        setInterval(timer,10000);
+
       return () => {
         if (_stream) {
           _stream.getTracks().forEach(function (track) {
             track.stop();
           });
         }
-        function screenshot() {
-          // const imageSrc = camaraRef.current.getScreenshot()
-          // const face = Image(imageSrc)
-          // const emotion = Model(face)
-          // console.log(emotion)
-          
-       }
+        clearInterval(timer); 
       };
     }, []);
     return (
-    <div id="container">
-        <div id="navi">
-            <video
-                style={{ width: '700px', height: '500px'}}
-                autoPlay
-                muted
-                controls
-                id="videoId"
-                ref={camaraRef}
-            ></video>
+      <div id = 'align'>
+        <div id="container">
+            <div id="navi">
+                <video
+                    style={{ width: '700px', height: '500px'}}
+                    autoPlay
+                    muted
+                    controls
+                    id="videoId"
+                    ref={camaraRef}
+                ></video>
+            </div>
+            <div id="infoi">
+                <TFToVideo videoId="videoId"></TFToVideo>
+            </div>
         </div>
-        <div id="infoi">
-            <TFToVideo videoId="videoId"></TFToVideo>
+        <div id = 'containerLeft'>
+          <h2> Current Emotion: {placeholderText[index]}</h2>
         </div>
-        {/* <div>
-          <img scr = {image} alt = "screenshot"></img>
-        </div> */}
-  </div>
+      </div>
 
     );
   }

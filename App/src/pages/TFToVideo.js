@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import {download} from './model'
 // import {setPic} from './model'
 let model;
 export default function TFToVideo(props) {
@@ -97,20 +98,23 @@ export default function TFToVideo(props) {
     photo.setAttribute('src', data);
   };
 
-//   const screenshot = async () => {
-//     const video = document.querySelector('video');
-//     await contextRef.current.drawImage(
-//       video,
-//       0,
-//       0,
-//       childElementSize.width,
-//       childElementSize.height
-//     );
-//     var data = canvasRef.current.toDataURL('image/png');
-//     console.log(data)
-//     setPic(data)
-//  }
-  // setInterval(screenshot, 20000);
+  const screenshot = async () => {
+    const video = document.querySelector('video');
+    await contextRef.current.drawImage(
+      video,
+      0,
+      0,
+      childElementSize.width,
+      childElementSize.height
+    );
+    var image = canvasRef.current.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+    //window.location.href=image; // it will save locally
+    var dataURL = canvasRef.current.toDataURL()
+    //await setInterval(download(dataURL), 10000); //send face img URL (data) to model function
+    await setInterval(download(image), 10000); //send face img to model function
+    console.log('done')
+ }
+ setInterval(screenshot, 10000)
 
   const loadDataProccessing = async () => {
     const returnTensors = false;
