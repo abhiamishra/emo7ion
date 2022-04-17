@@ -485,7 +485,11 @@
   background-color: white;
   width: 500px;
   height: 480px;
-  position: relative;
+  position: fixed;
   left: 800px;
-  top: -110px
+  top: 55px
+}
+
+#spacing{
+  top: 80px;
 }

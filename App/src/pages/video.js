@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef, Component } from 'react';
 import TFToVideo from './TFToVideo';
 import {sendToModel} from './model'
+import Chart from './Components/Chart';
 
 
 import DoughnutChart from './Components/DoughnutChart';
@@ -46,7 +47,8 @@ class DoughnutChart extends Component {
 let _stream;
 var image = ''
 var currentEmotion = "SAD"
-const placeholderText = ["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"];
+const placeholderText = [" ", "Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"];
+const suggestions = [" ", "Unless discussing a topic you feel anger towards, try to smile for your audience!", "Unless discussing a topic that rightfully disgusts you, try to show more enthusiasm for your audience!", "You look fearful. Be more confident: try sitting up strait and smiling!", "You look happy! This will make your audience feel more excited", "You look upset. If the topic makes you feel this way, your expression shows concern. If not, smile!", "You look surprised! This is good to add more expressions for certain topics.", "Your expressionn is very neutral. Try to express more feelings for the topics at hand."];
 
 function Video() {
   const [index, setIndex] = useState(0);
@@ -64,12 +66,12 @@ function Video() {
         const timer = () => {
           setIndex(prevIndex => {
             if(prevIndex === placeholderText.length - 1){
-              return 0;
+              return 1;
             }
             return prevIndex + 1;
           })
         };
-        setInterval(timer,10000);
+        setInterval(timer,20000);
 
       return () => {
         if (_stream) {
@@ -101,8 +103,13 @@ function Video() {
             </div>
         </div>
         <div id = 'containerLeft'>
-          <h2> Current Emotion: {placeholderText[index]}</h2>
-            <DoughnutChart/>
+          <div>
+            <h2> Current Emotion: {placeholderText[index]}</h2>
+          <Chart/>
+          <br></br>
+          <h3> Suggested Improvements:</h3>
+          <p style = {{margin: '20px'}}> {suggestions[index]}</p>
+          </div>
         </div>
       </div>
 

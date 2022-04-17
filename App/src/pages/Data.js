@@ -1,32 +1,31 @@
-const export UserData = [
+export const UserData = [
   {
-    emotion: Angry,
+    emotion: "Angry",
+    number: 1,
+  },
+  {
+    emotion: "Disgust",
+    number: 1,
+  },
+  {
+    emotion: "Fear",
+    number: 1,
+  },
+  {
+    emotion: "Happy",
+    number: 1,
+  },
+  {
+    emotion: "Sad",
     number: 0,
   },
   {
-    emotion: Disgust,
+    emotion: "Surprise",
     number: 0,
   },
   {
-    emotion: Fear,
+    emotion: "Neutral",
     number: 0,
   },
-  {
-    emotion: Happy,
-    number: 0,
-  },
-  {
-    emotion: Sad,
-    number: 0,
-  },
-  {
-    emotion: Surprise,
-    number: 0,
-  },
-  {
-    emotion: Neutral,
-    number: 0,
-  },
-]
-
-["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"];
+];
+//["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"];
