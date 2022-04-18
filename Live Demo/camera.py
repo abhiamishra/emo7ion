@@ -4,16 +4,11 @@ import numpy as np
 
 facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 model = FacialExpressionModel("model.json", "model_weights.h5")
-#font = cv2.FONT_HERSHEY_SIMPLEX
-font = cv2.FONT_HERSHEY_PLAIN
+font = cv2.FONT_HERSHEY_SIMPLEX
 
 class VideoCamera(object):
     def __init__(self):
-        ## Uncoment the following to change video source. (3rd option is for the Webcam)
-        #self.video = cv2.VideoCapture('videos/presidential_debate.mp4')
-        #self.video = cv2.VideoCapture('videos/facial_exp.mkv')
-        #self.video = cv2.VideoCapture(0)
-        self.video = cv2.VideoCapture('0')
+        self.video = cv2.VideoCapture(0)
 
     def __del__(self):
         self.video.release()
@@ -30,7 +25,7 @@ class VideoCamera(object):
             roi = cv2.resize(fc, (48, 48))
             pred = model.predict_emotion(roi[np.newaxis, :, :, np.newaxis])
 
-            cv2.putText(fr, pred, (x+(w//3), y-5), font, 5, (0, 0, 255), 2)
+            cv2.putText(fr, pred, (x, y), font, 1, (255, 255, 0), 2)
             cv2.rectangle(fr,(x,y),(x+w,y+h),(255,0,0),2)
 
         _, jpeg = cv2.imencode('.jpg', fr)
