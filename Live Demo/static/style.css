@@ -24,6 +24,10 @@ h1 {
 #bg {
   width: 50%;
   height: 60%;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 2%;
 }
 
 #display {
