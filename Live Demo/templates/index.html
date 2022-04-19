@@ -1,18 +1,8 @@
 <html>
   <head>
-
     <title>Face expression recognition</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    
   </head>
   <body>
-    <div id="text_holder">
-      <h1> Live Demo </h1>
-    </div>
-
-    <div id="display">
-      <img id="bg" src="{{ url_for('video_feed') }}">
-    </div>
+    <img id="bg" width=1200px height=900px src="{{ url_for('video_feed') }}">
   </body>
 </html>
