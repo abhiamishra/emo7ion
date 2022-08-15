@@ -1,2 +1,28 @@
-# emo7ion
-repository for facial recognition web-app on AWS 
+# Emo7ion - TensorFlow Keras Facial Experession Recognition Website
+
+## Purpose
+Analyzing the emotion of crowds with thousands of people is close to impossible because of the shear amonut of people. The purpose of this project is to train a model that will be able to tackle this problem. This project could be extremely useful during a zoom call to track engagment, concerts and events to track fan enojeyments and much more. 
+
+![Problem and Solution](gitImages/problemSolution.png?raw=true "Problem and Solution")
+
+## Why
+Our team wanted to grow in the fields of:
+* Computer vision, Convultional Neural Networks and deep learning.
+* Learn how to use AWS for data science cloud computing
+* Learning how to work with AWS and Flask
+
+## Data
+We got our data from the "Face expression recognition dataset" on Kaggle. This dataset contains 35,900 different images classified into 7 different emotions [Happy, Sad, Angry, Neutral, Suprise, Disgust, Fear].
+
+![Problem and Solution](gitImages/DatasetFaces.png?raw=true "Problem and Solution")
+
+## Model
+Our team decided to use a TensorFlow Kearn Convolutional Neural Network. 
+
+Our model was formated as follows:
+* Four Convulutional 2D lAyer of size [64, 128, 512, 512]
+* Two Dense Layers of size [256, 512]
+
+![ModelImage](gitImages/NeuralNetworkImages.png?raw=true "Model Images")
+**Our Model was trained then exported from AWS Sagemaker**
+
