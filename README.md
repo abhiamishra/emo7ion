@@ -37,9 +37,16 @@ The main parameters that we chose to tune are:
 **Complications: ** The complexity of our model and the size of our data required large amount of CPU resources (15+ hrs) in order to use a hyper parameter tuner. In order to accomplish this we needed to use a virtual computer on cloud (AWS EC2). The AWS EC2 storage we were alloted wasn't large enough to hold our image dataset.
 
 ## Accuracy
-The accuracy of our model came out to ***65%*** which is 
+The accuracy of our model came out total accuracy ***65%*** which is 
 
 ![Heatmap](gitImages/ConfusionMatrix.png?raw=true "HeatMap")
+
+Our model was best at predicting Happy emotions with an accuracy of 86% and worst at predicting fear with a 30% accuracy.
+
+## Future
+We want to make our data be able to work on anyone, regardless of how they look. In order to do this we will have to gather more data on other races, genders, ages an more. 
+
+We also want to fully integerate our model onto a react website connected to a AWS Lambda endpoint.
 
 
 
