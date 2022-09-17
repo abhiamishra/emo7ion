@@ -1,4 +1,4 @@
-# Emo7ion - TensorFlow Keras Facial Experession Recognition Website
+# Emo7ion - TensorFlow Keras Facial Experession Recognition Website 
 
 ## Purpose
 Analyzing the emotion of crowds with thousands of people is close to impossible because of the shear amonut of people. The purpose of this project is to train a model that will be able to tackle this problem. This project could be extremely useful during a zoom call to track engagment, concerts and events to track fan enojeyments and much more. 
